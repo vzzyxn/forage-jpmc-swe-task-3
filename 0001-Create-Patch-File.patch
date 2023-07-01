@@ -1,0 +1,204 @@
+From ec658bc52718553ce3a7b7fe388d021481ad7f1d Mon Sep 17 00:00:00 2001
+From: vzzyxn <vigneshanilinfo@gmail.com>
+Date: Sat, 1 Jul 2023 21:28:37 +0530
+Subject: [PATCH] Create Patch File
+
+---
+ package.json           |   8 +++----
+ src/.Graph.tsx.swp     | Bin 0 -> 12288 bytes
+ src/DataManipulator.ts |  38 ++++++++++++++++++++-----------
+ src/DataStreamer.ts    |   2 +-
+ src/Graph.cdd          |   0
+ src/Graph.tsx          |  50 ++++++++++++++++++++++-------------------
+ 6 files changed, 57 insertions(+), 41 deletions(-)
+ create mode 100644 src/.Graph.tsx.swp
+ create mode 100644 src/Graph.cdd
+
+diff --git a/package.json b/package.json
+index 8ca3a60..702c18e 100644
+--- a/package.json
++++ b/package.json
+@@ -3,10 +3,10 @@
+   "version": "0.1.0",
+   "private": true,
+   "dependencies": {
+-    "@finos/perspective": "^1.6.2",
+-    "@finos/perspective-viewer": "^1.6.2",
+-    "@finos/perspective-viewer-d3fc": "^1.6.2",
+-    "@finos/perspective-viewer-datagrid": "^1.6.2",
++    "@finos/perspective": "^0.4.8",
++    "@finos/perspective-viewer": "^0.2.12",
++    "@finos/perspective-viewer-d3fc": "^0.2.12",
++    "@finos/perspective-viewer-datagrid": "^0.2.12",
+     "@types/jest": "^23.3.13",
+     "@types/node": "^10.12.19",
+     "@types/react": "^16.9.0",
+diff --git a/src/.Graph.tsx.swp b/src/.Graph.tsx.swp
+new file mode 100644
+index 0000000000000000000000000000000000000000..3bbea1847b7f5b5333ae05072f18560e975500fe
+GIT binary patch
+literal 12288
+zcmeI2F>@P57=||~7?fa=!4%BUY|O-xW~`G#nv5NL3~_M6*iNvWG{$4E?^g20cegjY
+zE6K(P_ywVW0)~cyNkK(RK|upGFi`L-prW84@7|rHlN{SMnbpjrllI&FcJJBm)|rWR
+zryt&3p*Os11h314%-#7q_~P+p^1@X@+QQ#IwC!iSco+(4&gg{jM`^;k=BmwA{ZSJ6
+z^@dce$!qp=O?P<BFuh;9Uf0U6FDaJnc}5?co!Iqo2AqM@4YW+7c4LfOfAiY3?fAyT
+z6*~UPgVV>js59UUI0MdrGvEw31I~am;0!!h2265}e2hCfpWoF&emysG&A+;fGvEw3
+z1I~am;0!ne&VV!E3^)VMfHU9>{0|MVfRNIQgj_9Q@%aD$h5R1=xJ1ae-~(_Q)PV<H
+z2j>9+|GiAePv8mo1{{F*!6sM*uYp&=IQVyrkUzmAAiz490Tf&Sf4@Y?@8Emz75Ef9
+z2JeA!Fb4j)NXU2KGq4Ay!7mpG`4W5rnqUn~f{WlU+|zI1SMW3V5&Qt2fX_h}EQ5Ez
+zEwBJ)fpuZI0xkjfat53MXTTY72AqNC+W<dEq%t(%4b}<`T~eI$gJX^OW#TOU`A{m6
+zE+wTdDV4UWvv@BpGQ(C_ERt5pj8tBe$6PVP*JP(+_JsBlB@^uh=vJM=fV9o9-H>~&
+z1g*TXiG-q&bxs3SdPIB~B{Jr*Sroy8te<VBv<rIgxK^<WQnF2y8YP-duC`gom6@Ss
+z)^3(DWflx&2cccrii6QmD@l%pvO&FfBO<O1ixLbCgf=4f4fT=Bl&7%ztQ+oH$kE)1
+z5<cIC+-C>auHO%2S$N1JPjmB@!R_p};HS)*O~so~r7_#P>-SbYjab|ijl;?jB`1#a
+zW!Q>hJE*)lk*;oHicS<n;A`RDZE#58#8w%0PfV|5r<RDeH2DmDNoR~}3*ND7I@}IL
+z%txjOB@2qB(3`(rr^^UYv&ZR9S|vMF#M#%I*gl<b--tG^+3Z}+@6g42D^&3YS3LH)
+zm)?eG&|>bio(8ovs7yLXJ0cEb$17y^I#TU(RjGRE^cC&z@rdPuZ06%b=;Y*SiEKgV
+zdLg-MA15n&Xb(^w4LCua<<Y|S9g7t<^H{9EJBZlFuAi`1w!_mD>$V@UtIGme-Sz^u
+z-IuX8G?M~<s7o?vwndG`K>Do+&omARa~n<gsNX)^V9iw)q0S4k^KC3wH>bBK)3g=u
+z$FdXKkM{?g{V?6@JX2OFsFNjbsGShmX+y~<EfQ3Nt%2gPvSOd#O1=r%v7)$XshF;D
+z<{Qsf9G>#*&t9FK6ZI9?vdA_wt&JJFVGlU^A=ZsYA5|XA5<g^G<9NkMO8J4oC{1tm
+zPPv<R@7rT?iXL_6k;tybJ_$3ZSDPtMSfz9Gv@Jz2MMP}4YA~Ol=%YW$osE^{{4VSo
+zZEkxS&(QVsXX$HP<D?BXw~9%#<=E~5=P>>}l)e1t>Au$G*<R}rT^v6CX*W}j?jw=n
+qprMIJhO8TCkGLxK&usQmFF>f&^+L4_`ldSvivzR$^hoO)^n40tRClNV
+
+literal 0
+HcmV?d00001
+
+diff --git a/src/DataManipulator.ts b/src/DataManipulator.ts
+index 7f62295..7f29bbc 100644
+--- a/src/DataManipulator.ts
++++ b/src/DataManipulator.ts
+@@ -1,20 +1,32 @@
+ import { ServerRespond } from './DataStreamer';
+ 
+-export interface Row {
+-  stock: string,
+-  top_ask_price: number,
+-  timestamp: Date,
++export interface Row { 
++	price_abc: number,
++	price_def: number,
++  	timestamp: Date, 
++	upper_bound: number, 
++	ratio: number,
++	lower_bound: number,
++	trigger_alert: number | undefined,
+ }
+ 
+ 
+ export class DataManipulator {
+-  static generateRow(serverResponds: ServerRespond[]) {
+-    return serverResponds.map((el: any) => {
+-      return {
+-        stock: el.stock,
+-        top_ask_price: el.top_ask && el.top_ask.price || 0,
+-        timestamp: el.timestamp,
++  static generateRow(serverResponds: ServerRespond[]): Row{ 
++	  const priceABC = (serverResponds[0].top_ask.price + serverResponds[0].top_bid.price)/2;
++	  const priceDEF = (serverResponds[1].top_ask.price + serverResponds[1].top_bid.price)/2; 
++	  const ratio = priceABC / priceDEF;
++	  const upper_bound = 1 + 0.07;
++	  const lower_bound = 1 - 0.07;
++      return { 
++	      price_abc: priceABC, 
++	      price_def: priceDEF, 
++	      ratio,
++	     timestamp: serverResponds[0].timestamp > serverResponds[1].timestamp ?	
++			serverResponds[0].timestamp : serverResponds[1].timestamp,
++	    upper_bound: upper_bound,
++	   lower_bound: lower_bound,
++	  trigger_alert: (ratio > upper_bound || ratio < lower_bound) ? ratio : undefined,
+       };
+-    })
+-  }
+-}
++    }
++  } 
+diff --git a/src/DataStreamer.ts b/src/DataStreamer.ts
+index 9d9eca7..ea51398 100644
+--- a/src/DataStreamer.ts
++++ b/src/DataStreamer.ts
+@@ -28,4 +28,4 @@ class DataStreamer {
+   }
+ }
+ 
+-export default DataStreamer;
+\ No newline at end of file
++export default DataStreamer;
+diff --git a/src/Graph.cdd b/src/Graph.cdd
+new file mode 100644
+index 0000000..e69de29
+diff --git a/src/Graph.tsx b/src/Graph.tsx
+index 277797d..4ce5e05 100644
+--- a/src/Graph.tsx
++++ b/src/Graph.tsx
+@@ -22,12 +22,15 @@ class Graph extends Component<IProps, {}> {
+     // Get element from the DOM.
+     const elem = document.getElementsByTagName('perspective-viewer')[0] as unknown as PerspectiveViewerElement;
+ 
+-    const schema = {
+-      stock: 'string',
+-      top_ask_price: 'float',
+-      top_bid_price: 'float',
+-      timestamp: 'date',
+-    };
++    const schema = { 
++	    price_abc: 'float',
++		    price_def: 'float',
++		    ratio: 'float',
++		    timestamp: 'date',
++		    upper_bound: 'float',
++		    lower_bound: 'float',
++		    trigger_alert: 'float',
++         };
+ 
+     if (window.perspective && window.perspective.worker()) {
+       this.table = window.perspective.worker().table(schema);
+@@ -36,25 +39,26 @@ class Graph extends Component<IProps, {}> {
+       // Load the `table` in the `<perspective-viewer>` DOM reference.
+       elem.load(this.table);
+       elem.setAttribute('view', 'y_line');
+-      elem.setAttribute('column-pivots', '["stock"]');
+       elem.setAttribute('row-pivots', '["timestamp"]');
+-      elem.setAttribute('columns', '["top_ask_price"]');
+-      elem.setAttribute('aggregates', JSON.stringify({
+-        stock: 'distinctcount',
+-        top_ask_price: 'avg',
+-        top_bid_price: 'avg',
+-        timestamp: 'distinct count',
+-      }));
+-    }
+-  }
++      elem.setAttribute('columns', '["ratio", "lower_bound", upper_bound", "trigger_alert"]');
++      elem.setAttribute('aggregates', JSON.stringify({ 
++	      price_abc: 'avg',
++	      price_def: 'avg',
++	      ratio: 'avg',
++              timestamp: 'distinct count', 
++	      upper_bound: 'avg',
++	      lower_bound: 'avg',
++	      trigger_alert: 'avg',
+ 
+-  componentDidUpdate() {
+-    if (this.table) {
+-      this.table.update(
+-        DataManipulator.generateRow(this.props.data),
+-      );
++      }));
+     }
+   }
+-}
+-
++componentDidUpdate() {
++	if(this.table) {
++		this.table.update([ 
++			DataManipulator.generateRow(this.props.data),
++		]);
++	}
++} 
++}			
+ export default Graph;
+-- 
+2.25.1
+
